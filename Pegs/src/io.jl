@@ -38,7 +38,7 @@ end
 
 ########################## SHOW THE BOARD ###########################
 
-function displayBoard(x::Matrix{Int64})
+function displayGrid(x::Matrix{Int64})
 
     println("\n------------------")
 
@@ -50,7 +50,7 @@ function displayBoard(x::Matrix{Int64})
                 print("o")
             elseif x[i, j] == 1
                 print("■")
-            elseif x[i, j] == 2
+            else
                 print(" ")
             end
         end 
@@ -59,6 +59,17 @@ function displayBoard(x::Matrix{Int64})
     println()
     println(" pegs: ", sum(x) - 32 ,)
     println("\n------------------")
+end
+
+###################################################################
+
+########################## DISPLAY ALL GRIDS ######################
+
+function displayAllGrids()
+    for name in readdir("../data")
+        grid = readInputFile("../data/$name")
+        displayGrid(grid)
+    end
 end
 
 ###################################################################
