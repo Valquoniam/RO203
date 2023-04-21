@@ -10,6 +10,7 @@ Argument
 """
 
 ################## GENERATING AN INSTANCE #####################################
+
 function generateInstance(n::Int64, density::Float64)
         
     # The size of the grid has to be 7 +k*3
@@ -37,12 +38,14 @@ function generateInstance(n::Int64, density::Float64)
     return grid
 end
 
-################## GENERATING AN INSTANCE #####################################
-                    """ 
-Generate all the instances
+##########################################################################
 
-Remark: a grid is generated only if the corresponding output file does not already exist
+############################ GENERATING THE DATASET ######################
+
+""" 
+Generate all the instances
 """
+
 function generateDataSet(set_size::Int64)
     for i in 2:set_size
 
@@ -74,5 +77,6 @@ function generateDataSet(set_size::Int64)
     end
 end
 
+#########################################################################
 
 
