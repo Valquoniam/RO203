@@ -50,14 +50,16 @@ function displayGrid(x::Matrix{Int64})
                 print("o")
             elseif x[i, j] == 1
                 print("■")
-            else
+            elseif x[i, j] == 2
                 print(" ")
             end
         end 
         println()
     end
     println()
-    println(" pegs: ", sum(x) - 32 ,)
+    nb_cases = (n_lines)^2 - 4*((floor(n_lines/3)))^2
+    nb_cases_out = Int64((n_lines)^2 - nb_cases)
+    println(" pegs: ", sum(x) - 2*(nb_cases_out))
     println("\n------------------")
 end
 

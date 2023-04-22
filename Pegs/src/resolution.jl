@@ -1,32 +1,137 @@
 # This file contains methods to solve an instance (heuristically or with CPLEX)
 using CPLEX
+using JuMP
+using MathOptInterface
 
 include("generation.jl")
-
+include("generation.jl")
 TOL = 0.00001
 
 """
 Solve an instance with CPLEX
 """
-function cplexSolve()
+function cplexSolve(grid::Matrix{Int64})
+     start = time()
+    # Get the size of the grid and add 4 because we need to include everything and we use n-2
+    grid_size = size(grid,1)
+    n = grid_size + 4
+
+    # Get our parameters
+    nb_cases = grid_size^2 - 4*(floor(grid_size/3))^2
+    nb_cases_out = grid_size^2 - nb_cases
+    s = Int64(sum(grid) - 2*nb_cases_out)
+    
+    println("Nombre d'étapes nécessaires : ", s)
 
     # Create the model
-    m = Model(with_optimizer(CPLEX.Optimizer))
+    m = Model(CPLEX.Optimizer)
 
-    # TODO
-    println("In file resolution.jl, in method cplexSolve(), TODO: fix input and output, define the model")
+    # Big thanks to https://www.cs.york.ac.uk/aig/projects/implied/docs/CPAIOR03.pdf for the constraints and the variable
+   
+    #################################################
+    # Variables
+    @variable(m, M[1:n, 1:n, 1:s, 1:4], Bin)  # M[i,j,t,d]     d = 1 : North | d = 2 : South | d = 3 : East | d = 4 : West 
+    @variable(m, bState[1:n, 1:n, 1:s], Bin)  # bState[i,j,t]
+    #################################################
+    
+    #################################################
+    # Constraints
+    
+    # East
+    @constraint(m, [i in 1:n, j in 1:n, t in 1:(s-1)], M[i,j,t,3] <= bState[i,j,t])
+    @constraint(m, [i in 1:(n-1), j in 1:n, t in 1:(s-1)], M[i,j,t,3] <= bState[i+1,j,t])
+    @constraint(m, [i in 1:(n-2), j in 1:n, t in 1:(s-1)], M[i,j,t,3] <= (1 - bState[i+2,j,t]))
 
-    # Start a chronometer
-    start = time()
+    # West
+    @constraint(m, [i in 1:n, j in 1:n, t in 1:(s-1)], M[i,j,t,4] <= bState[i,j,t])
+    @constraint(m, [i in 2:n, j in 1:n, t in 1:(s-1)], M[i,j,t,4] <= bState[i-1,j,t])
+    @constraint(m, [i in 3:n, j in 1:n, t in 1:(s-1)], M[i,j,t,4] <= (1 - bState[i-2,j,t]))
+    
+    # South
+    @constraint(m, [i in 1:n, j in 1:n, t in 1:(s-1)], M[i,j,t,2] <= bState[i,j,t])
+    @constraint(m, [i in 1:n, j in 1:(n-1), t in 1:(s-1)], M[i,j,t,2] <= bState[i,j+1,t])
+    @constraint(m, [i in 1:n, j in 1:(n-2), t in 1:(s-1)], M[i,j,t,2] <= (1 - bState[i,j+2,t]))
+    
+    # North
+    @constraint(m, [i in 1:n, j in 1:n, t in 1:(s-1)], M[i,j,t,1] <= bState[i,j,t])
+    @constraint(m, [i in 1:n, j in 2:n, t in 1:(s-1)], M[i,j,t,1] <= bState[i,j-1,t])
+    @constraint(m, [i in 1:n, j in 3:n, t in 1:(s-1)], M[i,j,t,1] <= (1 - bState[i,j-2,t]))
+    
+    # Transitions between time-steps t & t+1
+    @constraint(m, [i in 3:(n-2), j in 3:(n-2) , t in 1:(s-1)], (bState[i,j,t] - bState[i,j,t+1]) == sum(M[i,j,t,d] for d in 1:4)
+                                                                                                  + M[i-1,j,t,3] - M[i-2,j,t,3]
+                                                                                                  + M[i+1,j,t,4] - M[i+2,j,t,4]
+                                                                                                  + M[i,j-1,t,2] - M[i,j-2,t,2]
+                                                                                                  + M[i,j+1,t,1] - M[i,j+2,t,1] )
 
-    # Solve the model
+    # One move at each step
+    @constraint(m, [t in 1:(s-1)], sum(M[i,j,t,d] for i in 1:n, j in 1:n, d in 1:4) <= 1) # Un seul mouvement par étape est autorisé, tous pions confondus # <= 1 si le jeu n'est pas forcément résolvable
+
+
+    # Adding a constraint for security : at each step, the number of holes has to increase by 1
+    @constraint(m, [t in 2:(s-1)], sum(bState[i,j,t] for i in 1:n for j in 1:n) == sum(bState[i,j,t-1] for i in 1:n for j in 1:n) -1)
+
+    # Initialasizing the board
+    # We will consider the out-of-board values at the end of each step
+    # For now, we work in binary, so we can't make them equal to 2 (as in the grid matrix)
+    # Thus, we will say they are filled holes, which can't move at all
+    
+    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2), d in 1:4; grid[i-2, j-2] == 2], M[i,j,t,d] == 0) # Les cases hors sont des pions immobiles
+    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 2], bState[i,j,t] == 1) # Les cases hors du jeu sont représentés comme des pions
+
+
+    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 0], bState[i,j,1] == 0) # Les trous de G sont reportés sur la grille de l'étape 1
+    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 1], bState[i,j,1] == 1) # Les pions de G sont reportés sur la grille de l'étape 1    
+
+    # Initializing the two border boxes we added in order to consider every hole on the actual board
+    
+    # Initializing them as filled holes
+    @constraint(m, [i in 1:2, j in 1:n, t in 1:s], bState[i,j,t] == 1)
+    @constraint(m, [i in (n-1):n, j in 1:n, t in 1:s], bState[i,j,t] == 1)
+    @constraint(m, [i in 1:n, j in 1:2, t in 1:s], bState[i,j,t] == 1)
+    @constraint(m, [i in 1:n, j in (n-1):n, t in 1:s], bState[i,j,t] == 1)
+    
+    # These holes cannot move
+    @constraint(m, [t in 1:s, i in 1:2, j in 1:n, d in 1:4], M[i,j,t,d] == 0)
+    @constraint(m, [t in 1:s, i in (n-1):n, j in 1:n, d in 1:4], M[i,j,t,d] == 0)
+    @constraint(m, [t in 1:s, i in 1:n, j in 1:2, d in 1:4], M[i,j,t,d] == 0)
+    @constraint(m, [t in 1:s, i in 1:n, j in (n-1):n, d in 1:4], M[i,j,t,d] == 0)
+    
+
+    
+    #################################################
+
+    #################################################
+    #Objective
+
+    @objective(m, Min, sum(bState[i,j,s] for i in 1:n for j in 1:n ))
+    #################################################
+
+    set_optimizer_attribute(m, "CPXPARAM_TimeLimit", 30)
+    set_silent(m)
     optimize!(m)
 
-    # Return:
-    # 1 - true if an optimum is found
-    # 2 - the resolution time
-    return JuMP.primal_status(m) == JuMP.MathOptInterface.FEASIBLE_POINT, time() - start
-    
+    if primal_status(m) == MOI.FEASIBLE_POINT
+        for t in 1:s
+            grid_at_step_t = Matrix{Int64}(undef, n-4,n-4)
+            for i in 3:(n-2)
+                for j in 3:(n-2)
+                    if grid[i-2,j-2] == 2
+                        grid_at_step_t[i-2,j-2] = 2
+                    elseif value.(bState[i, j, t]) == 0
+                        grid_at_step_t[i-2, j-2] = 0
+                    elseif value.(bState[i, j, t]) == 1
+                        grid_at_step_t[i-2, j-2] = 1
+                    end
+                end
+            end
+            displayGrid(grid_at_step_t)
+        end
+        return time() - start
+    else
+        println("Aucune solution trouvée.")
+        return -1
+    end
 end
 
 """
