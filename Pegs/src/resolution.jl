@@ -1,9 +1,7 @@
 # This file contains methods to solve an instance (heuristically or with CPLEX)
 using CPLEX
 using JuMP
-using MathOptInterface
 
-include("generation.jl")
 include("generation.jl")
 TOL = 0.00001
 
@@ -11,7 +9,9 @@ TOL = 0.00001
 Solve an instance with CPLEX
 """
 function cplexSolve(grid::Matrix{Int64})
-     start = time()
+     
+    start = time()
+
     # Get the size of the grid and add 4 because we need to include everything and we use n-2
     grid_size = size(grid,1)
     n = grid_size + 4
@@ -21,8 +21,6 @@ function cplexSolve(grid::Matrix{Int64})
     nb_cases_out = grid_size^2 - nb_cases
     s = Int64(sum(grid) - 2*nb_cases_out)
     
-    println("Nombre d'étapes nécessaires : ", s)
-
     # Create the model
     m = Model(CPLEX.Optimizer)
 
@@ -69,19 +67,19 @@ function cplexSolve(grid::Matrix{Int64})
 
 
     # Adding a constraint for security : at each step, the number of holes has to increase by 1
-    @constraint(m, [t in 2:(s-1)], sum(bState[i,j,t] for i in 1:n for j in 1:n) == sum(bState[i,j,t-1] for i in 1:n for j in 1:n) -1)
+    # @constraint(m, [t in 2:(s-1)], sum(bState[i,j,t] for i in 1:n for j in 1:n) == sum(bState[i,j,t-1] for i in 1:n for j in 1:n) -1)
 
     # Initialasizing the board
     # We will consider the out-of-board values at the end of each step
     # For now, we work in binary, so we can't make them equal to 2 (as in the grid matrix)
     # Thus, we will say they are filled holes, which can't move at all
     
-    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2), d in 1:4; grid[i-2, j-2] == 2], M[i,j,t,d] == 0) # Les cases hors sont des pions immobiles
-    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 2], bState[i,j,t] == 1) # Les cases hors du jeu sont représentés comme des pions
+    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2), d in 1:4; grid[i-2, j-2] == 2], M[i,j,t,d] == 0) # Initializing twos as not mobile
+    @constraint(m, [t in 1:s, i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 2], bState[i,j,t] == 1)        # Initializing twos as pawns
 
 
-    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 0], bState[i,j,1] == 0) # Les trous de G sont reportés sur la grille de l'étape 1
-    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 1], bState[i,j,1] == 1) # Les pions de G sont reportés sur la grille de l'étape 1    
+    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 0], bState[i,j,1] == 0) # Initializing zeros
+    @constraint(m, [i in 3:(n-2), j in 3:(n-2); grid[i-2, j-2] == 1], bState[i,j,1] == 1) # Initializing ones
 
     # Initializing the two border boxes we added in order to consider every hole on the actual board
     
@@ -96,22 +94,30 @@ function cplexSolve(grid::Matrix{Int64})
     @constraint(m, [t in 1:s, i in (n-1):n, j in 1:n, d in 1:4], M[i,j,t,d] == 0)
     @constraint(m, [t in 1:s, i in 1:n, j in 1:2, d in 1:4], M[i,j,t,d] == 0)
     @constraint(m, [t in 1:s, i in 1:n, j in (n-1):n, d in 1:4], M[i,j,t,d] == 0)
-    
-
-    
     #################################################
 
     #################################################
     #Objective
 
-    @objective(m, Min, sum(bState[i,j,s] for i in 1:n for j in 1:n ))
+    @objective(m, Min, sum(bState[i,j,s] for i in 3:(n-2) for j in 3:(n-2) if grid[i-2,j-2] !=2))
     #################################################
 
-    set_optimizer_attribute(m, "CPXPARAM_TimeLimit", 30)
+    # Limitation du temps de résolution à 60 secondes
+    set_time_limit_sec(m, 20)
+    
     set_silent(m)
+    
+    # Lancement de la résolution
     optimize!(m)
 
-    if primal_status(m) == MOI.FEASIBLE_POINT
+    # Récupération du statut de la résolution
+    isOptimal = termination_status(m) == MOI.OPTIMAL
+    solutionFound = primal_status(m) == MOI.FEASIBLE_POINT
+
+
+    if solutionFound
+        all_grids = Array{Matrix{Int64}}(undef, s)
+        # Displaying the steps of resolution
         for t in 1:s
             grid_at_step_t = Matrix{Int64}(undef, n-4,n-4)
             for i in 3:(n-2)
@@ -125,15 +131,42 @@ function cplexSolve(grid::Matrix{Int64})
                     end
                 end
             end
+            all_grids[t] = grid_at_step_t
             displayGrid(grid_at_step_t)
         end
-        return time() - start
+        
+        # Récupération de la valeur de l’objectif
+        obj = Int64(JuMP.objective_value(m))
+        
+        # Si la solution optimale n’est pas obtenue
+        if !isOptimal
+            
+            print("Solution non optimale\n")
+            # Le solveur fournit la meilleure borne connue sur la solution optimale...
+            # (i.e., meilleure objectif de la relaxation linéaire parmi tous les noeuds de branch-and-bound non élagués)
+            bound = JuMP.objective_bound(m)
+            # ... qu’on utilise pour évaluer la qualité de la solution
+            # trouvée par le solveur en calculant le gap
+            # (i.e., l’écart relatif entre l’objectif de la solution
+            # trouvée et la borne supérieure).
+        
+            # Gap : Différence entre nombre de pions obtenu et nombre de pions optimal
+            gap = Int64(round(obj - bound))
+
+            print("Objectif pour n = ",n, " : ", obj, "\n")
+            print("Gap : ", gap , " pawn(s)\n")
+        else
+            print("Solution optimale \n")
+            print("Objectif pour n = ",n, " : ", obj, "\n")
+        end
+        return isOptimal, time() - start, all_grids
     else
-        println("Aucune solution trouvée.")
+        println("Aucun solution trouvée dans le temps imparti.")
         return -1
     end
-end
-
+end 
+            
+        
 """
 Heuristically solve an instance
 """
