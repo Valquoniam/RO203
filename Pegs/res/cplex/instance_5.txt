@@ -1,0 +1,18 @@
+solveTime = 0.012000083923339844 s.
+
+isOptimal = true
+
+Etape n°1 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooooo
+o■ooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 1
+------------------
+

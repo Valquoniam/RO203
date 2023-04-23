@@ -1,0 +1,228 @@
+solveTime = 20.125999927520752 s.
+
+isOptimal = false
+
+Etape n°1 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■oo■■o
+■oo■■o■
+o■■oooo
+  o■■  
+  oo■  
+
+ pegs: 16
+------------------
+
+Etape n°2 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■oo■■o
+■oooo■■
+o■■oooo
+  o■■  
+  oo■  
+
+ pegs: 15
+------------------
+
+Etape n°3 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■ooo
+■oooo■■
+o■■oooo
+  o■■  
+  oo■  
+
+ pegs: 14
+------------------
+
+Etape n°4 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■ooo
+■ooo■oo
+o■■oooo
+  o■■  
+  oo■  
+
+ pegs: 13
+------------------
+
+Etape n°5 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■ooo
+■ooo■oo
+o■■o■oo
+  o■o  
+  ooo  
+
+ pegs: 12
+------------------
+
+Etape n°6 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■■oo
+■oooooo
+o■■oooo
+  o■o  
+  ooo  
+
+ pegs: 11
+------------------
+
+Etape n°7 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■■oo
+■oooooo
+o■■oooo
+  o■o  
+  ooo  
+
+ pegs: 11
+------------------
+
+Etape n°8 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■■oo
+■oooooo
+ooo■ooo
+  o■o  
+  ooo  
+
+ pegs: 10
+------------------
+
+Etape n°9 : 
+
+------------------ 
+  o■■  
+  oo■  
+■■o■■oo
+■oo■ooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 9
+------------------
+
+Etape n°10 : 
+
+------------------ 
+  o■■  
+  o■■  
+■■oo■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 8
+------------------
+
+Etape n°11 : 
+
+------------------ 
+  oo■  
+  oo■  
+■■o■■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 7
+------------------
+
+Etape n°12 : 
+
+------------------ 
+  oo■  
+  oo■  
+■■ooo■o
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 6
+------------------
+
+Etape n°13 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■oo■■o
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 5
+------------------
+
+Etape n°14 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■o■ooo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 4
+------------------
+
+Etape n°15 : 
+
+------------------ 
+  ooo  
+  ooo  
+oo■■ooo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 3
+------------------
+
+Etape n°16 : 
+
+------------------ 
+  ooo  
+  ooo  
+oooo■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 2
+------------------
+

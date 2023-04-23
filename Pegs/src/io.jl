@@ -39,28 +39,31 @@ end
 ########################## SHOW THE BOARD ###########################
 
 function displayGrid(x::Matrix{Int64})
-
-    println("\n------------------")
+    
+    # Creation of our text grid
+    grid = "------------------ \n"
 
     n_lines = size(x, 1)
 
     for i in 1:n_lines
         for j in 1:n_lines
             if x[i, j] == 0
-                print("o")
+                grid = string(grid,"o")
             elseif x[i, j] == 1
-                print("■")
+                grid = string(grid,"■")
             elseif x[i, j] == 2
-                print(" ")
+                grid = string(grid," ")
             end
         end 
-        println()
+        grid = string(grid,"\n")
     end
-    println()
+    grid = string(grid,"\n")
+
     nb_cases = (n_lines)^2 - 4*((floor(n_lines/3)))^2
     nb_cases_out = Int64((n_lines)^2 - nb_cases)
-    println(" pegs: ", sum(x) - 2*(nb_cases_out))
-    println("\n------------------")
+    
+    grid = string(grid, " pegs: ", sum(x) - 2*(nb_cases_out), "\n------------------\n")
+    return grid
 end
 
 ###################################################################

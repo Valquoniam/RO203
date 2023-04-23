@@ -102,7 +102,7 @@ function cplexSolve(grid::Matrix{Int64})
     @objective(m, Min, sum(bState[i,j,s] for i in 3:(n-2) for j in 3:(n-2) if grid[i-2,j-2] !=2))
     #################################################
 
-    # Limitation du temps de résolution à 60 secondes
+    # Limitation du temps de résolution à 10 secondes
     set_time_limit_sec(m, 20)
     
     set_silent(m)
@@ -113,7 +113,6 @@ function cplexSolve(grid::Matrix{Int64})
     # Récupération du statut de la résolution
     isOptimal = termination_status(m) == MOI.OPTIMAL
     solutionFound = primal_status(m) == MOI.FEASIBLE_POINT
-
 
     if solutionFound
         all_grids = Array{Matrix{Int64}}(undef, s)
@@ -158,11 +157,12 @@ function cplexSolve(grid::Matrix{Int64})
         else
             print("Solution optimale \n")
             print("Objectif pour n = ",n, " : ", obj, "\n")
+            print("Computation time : ", round(time() - start), "s.\n")
         end
         return isOptimal, time() - start, all_grids
     else
         println("Aucun solution trouvée dans le temps imparti.")
-        return -1
+        return -1, -1, -1
     end
 end 
             
@@ -211,10 +211,7 @@ function solveDataSet()
     for file in filter(x->occursin(".txt", x), readdir(dataFolder))  
         
         println("-- Resolution of ", file)
-        readInputFile(dataFolder * file)
-
-        # TODO
-        println("In file resolution.jl, in method solveDataSet(), TODO: read value returned by readInputFile()")
+        instance = readInputFile(dataFolder * file)
         
         # For each resolution method
         for methodId in 1:size(resolutionMethod, 1)
@@ -232,18 +229,10 @@ function solveDataSet()
                 # If the method is cplex
                 if resolutionMethod[methodId] == "cplex"
                     
-                    # TODO 
-                    println("In file resolution.jl, in method solveDataSet(), TODO: fix cplexSolve() arguments and returned values")
-                    
                     # Solve it and get the results
-                    isOptimal, resolutionTime = cplexSolve()
-                    
-                    # If a solution is found, write it
-                    if isOptimal
-                        # TODO
-                        println("In file resolution.jl, in method solveDataSet(), TODO: write cplex solution in fout") 
-                    end
+                    isOptimal, resolutionTime, all_grids = cplexSolve(instance)
 
+                    n = size(all_grids,1)
                 # If the method is one of the heuristics
                 else
                     
@@ -274,20 +263,20 @@ function solveDataSet()
                         
                     end 
                 end
-
-                println(fout, "solveTime = ", resolutionTime) 
-                println(fout, "isOptimal = ", isOptimal)
                 
-                # TODO
-                println("In file resolution.jl, in method solveDataSet(), TODO: write the solution in fout") 
+                if isOptimal == -1
+                    println(fout, "Pas de solution trouvé dans le temps imparti")
+                else
+                    println(fout, "solveTime = ", resolutionTime, " s.\n") 
+                    println(fout, "isOptimal = ", isOptimal, "\n")
+                    for i in 1:n
+                        println(fout, "Etape n°$i : \n")
+                        grid_string = displayGrid(all_grids[i])
+                        println(fout,grid_string)
+                    end
+                end
                 close(fout)
             end
-
-
-            # Display the results obtained with the method on the current instance
-            include(outputFile)
-            println(resolutionMethod[methodId], " optimal: ", isOptimal)
-            println(resolutionMethod[methodId], " time: " * string(round(solveTime, sigdigits=2)) * "s\n")
-        end         
+        end 
     end 
 end

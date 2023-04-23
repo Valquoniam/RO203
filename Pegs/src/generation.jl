@@ -49,8 +49,8 @@ Generate all the instances
 function generateDataSet(set_size::Int64)
     for i in 2:set_size
 
-        # Size of the grid between 7 and 16 for computation time obvious reasons
-        n = Int64(7 + 3* ceil(3*rand()))
+        # Size of the grid to 7 for speed reasons
+        n = Int64(7)
         
         # Random density
         density = rand()

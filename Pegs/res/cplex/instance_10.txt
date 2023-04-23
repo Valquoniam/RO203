@@ -1,0 +1,144 @@
+solveTime = 3.49399995803833 s.
+
+isOptimal = true
+
+Etape n°1 : 
+
+------------------ 
+  ooo  
+  o■■  
+■oo■■oo
+■o■oooo
+■■■oooo
+  ooo  
+  ooo  
+
+ pegs: 10
+------------------
+
+Etape n°2 : 
+
+------------------ 
+  ooo  
+  ■oo  
+■oo■■oo
+■o■oooo
+■■■oooo
+  ooo  
+  ooo  
+
+ pegs: 9
+------------------
+
+Etape n°3 : 
+
+------------------ 
+  ooo  
+  ■oo  
+■o■■■oo
+■oooooo
+■■ooooo
+  ooo  
+  ooo  
+
+ pegs: 8
+------------------
+
+Etape n°4 : 
+
+------------------ 
+  ooo  
+  ■oo  
+■o■■■oo
+■oooooo
+oo■oooo
+  ooo  
+  ooo  
+
+ pegs: 7
+------------------
+
+Etape n°5 : 
+
+------------------ 
+  ooo  
+  ooo  
+■oo■■oo
+■o■oooo
+oo■oooo
+  ooo  
+  ooo  
+
+ pegs: 6
+------------------
+
+Etape n°6 : 
+
+------------------ 
+  ooo  
+  ooo  
+■o■■■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 5
+------------------
+
+Etape n°7 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■oo■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 4
+------------------
+
+Etape n°8 : 
+
+------------------ 
+  ooo  
+  ooo  
+oo■o■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 3
+------------------
+
+Etape n°9 : 
+
+------------------ 
+  ooo  
+  ooo  
+oo■o■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 3
+------------------
+
+Etape n°10 : 
+
+------------------ 
+  ooo  
+  ooo  
+oo■o■oo
+■oooooo
+ooooooo
+  ooo  
+  ooo  
+
+ pegs: 3
+------------------
+
