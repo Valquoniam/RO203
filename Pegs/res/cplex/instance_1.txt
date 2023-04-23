@@ -1,4 +1,4 @@
-solveTime = 20.796000003814697 s.
+solveTime = 61.33800005912781
 
 isOptimal = false
 

@@ -1,172 +1,452 @@
-solveTime = 10.937999963760376 s.
+solveTime = 47.799999952316284
 
 isOptimal = true
 
 Etape n°1 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooooo■■
-■■o■o■o
   ■■■  
-  ■o■  
+  ■■■  
+■■■■■■■
+■■■■■■■
+■■■■■o■
+  ■■■  
+  ■■■  
 
- pegs: 12
+ pegs: 32
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooo■o■■
-■■ooo■o
-  ■o■  
-  ■o■  
+  ■■■  
+  ■■■  
+■■■■■■■
+■■■■■■■
+■■■oo■■
+  ■■■  
+  ■■■  
 
- pegs: 11
+ pegs: 31
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooo■o■■
-■■■oo■o
-  oo■  
-  oo■  
+  ■■■  
+  ■■■  
+■■■■o■■
+■■■■o■■
+■■■o■■■
+  ■■■  
+  ■■■  
 
- pegs: 10
+ pegs: 30
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooo■o■■
-■■■o■■o
-  ooo  
-  ooo  
+  ■■■  
+  ■■■  
+■■■■o■■
+■■■■o■■
+■oo■■■■
+  ■■■  
+  ■■■  
 
- pegs: 9
+ pegs: 29
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooo■■oo
-■■■o■■o
-  ooo  
-  ooo  
+  ■■■  
+  ■■■  
+■■■■o■■
+■■■■o■■
+■o■oo■■
+  ■■■  
+  ■■■  
 
- pegs: 8
+ pegs: 28
 ------------------
 
 Etape n°6 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-oo■oooo
-■■■o■■o
-  ooo  
-  ooo  
+  ■■■  
+  ■■■  
+■■■■o■■
+■■■■o■■
+■o■■o■■
+  ■o■  
+  ■o■  
 
- pegs: 7
+ pegs: 27
 ------------------
 
 Etape n°7 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-oo■oooo
-■■■■ooo
-  ooo  
-  ooo  
+  ■■■  
+  ■■■  
+■■■■■oo
+■■■■o■■
+■o■■o■■
+  ■o■  
+  ■o■  
 
- pegs: 6
+ pegs: 26
 ------------------
 
 Etape n°8 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-oo■oooo
-■■■■ooo
-  ooo  
-  ooo  
+  ■■■  
+  ■■■  
+■■■■■oo
+■■■■o■■
+■o■■■■■
+  ■oo  
+  ■oo  
 
- pegs: 6
+ pegs: 25
 ------------------
 
 Etape n°9 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooooooo
-■■o■ooo
+  ■■■  
+  ■■o  
+■■■■ooo
+■■■■■■■
+■o■■■■■
   ■oo  
-  ooo  
+  ■oo  
 
- pegs: 5
+ pegs: 24
 ------------------
 
 Etape n°10 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■oooooo
-ooooooo
-oo■■ooo
+  ■■■  
+  oo■  
+■■■■ooo
+■■■■■■■
+■o■■■■■
   ■oo  
-  ooo  
+  ■oo  
 
- pegs: 4
+ pegs: 23
 ------------------
 
 Etape n°11 : 
 
 ------------------ 
+  ■■■  
+  oo■  
+■■■■ooo
+■■■■o■■
+■o■■o■■
+  ■o■  
+  ■oo  
+
+ pegs: 22
+------------------
+
+Etape n°12 : 
+
+------------------ 
+  ■■■  
+  oo■  
+■■■■ooo
+■■■■■oo
+■o■■o■■
+  ■o■  
+  ■oo  
+
+ pegs: 21
+------------------
+
+Etape n°13 : 
+
+------------------ 
+  ■■■  
+  oo■  
+■■■■ooo
+■■■■■oo
+■o■■■oo
+  ■o■  
+  ■oo  
+
+ pegs: 20
+------------------
+
+Etape n°14 : 
+
+------------------ 
+  ■■o  
+  ooo  
+■■■■■oo
+■■■■■oo
+■o■■■oo
+  ■o■  
+  ■oo  
+
+ pegs: 19
+------------------
+
+Etape n°15 : 
+
+------------------ 
+  ■■o  
+  oo■  
+■■■■ooo
+■■■■ooo
+■o■■■oo
+  ■o■  
+  ■oo  
+
+ pegs: 18
+------------------
+
+Etape n°16 : 
+
+------------------ 
+  oo■  
+  oo■  
+■■■■ooo
+■■■■ooo
+■o■■■oo
+  ■o■  
+  ■oo  
+
+ pegs: 17
+------------------
+
+Etape n°17 : 
+
+------------------ 
   ooo  
   ooo  
-■oooooo
-ooooooo
+■■■■■oo
+■■■■ooo
+■o■■■oo
+  ■o■  
+  ■oo  
+
+ pegs: 16
+------------------
+
+Etape n°18 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■■■■oo
+■■■■ooo
+■■oo■oo
+  ■o■  
+  ■oo  
+
+ pegs: 15
+------------------
+
+Etape n°19 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■■■■oo
+■■■■ooo
+oo■o■oo
+  ■o■  
+  ■oo  
+
+ pegs: 14
+------------------
+
+Etape n°20 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■■■■oo
+■■■■■oo
+oo■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 13
+------------------
+
+Etape n°21 : 
+
+------------------ 
+  ooo  
+  ooo  
+o■■■■oo
+o■■■■oo
+■o■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 12
+------------------
+
+Etape n°22 : 
+
+------------------ 
+  ooo  
+  ooo  
+o■■■■oo
+■oo■■oo
+■o■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 11
+------------------
+
+Etape n°23 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■■■■oo
+ooo■■oo
+oo■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 10
+------------------
+
+Etape n°24 : 
+
+------------------ 
+  ooo  
+  oo■  
+■■■■ooo
 ooo■ooo
+oo■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 9
+------------------
+
+Etape n°25 : 
+
+------------------ 
+  ooo  
+  oo■  
+■■oo■oo
+ooo■ooo
+oo■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 8
+------------------
+
+Etape n°26 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■ooooo
+ooo■■oo
+oo■oooo
+  ■oo  
+  ■oo  
+
+ pegs: 7
+------------------
+
+Etape n°27 : 
+
+------------------ 
+  ooo  
+  ooo  
+■■ooooo
+oo■■■oo
+ooooooo
+  ooo  
+  ■oo  
+
+ pegs: 6
+------------------
+
+Etape n°28 : 
+
+------------------ 
+  ooo  
+  ooo  
+oo■oooo
+oo■■■oo
+ooooooo
+  ooo  
+  ■oo  
+
+ pegs: 5
+------------------
+
+Etape n°29 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooooo
+ooo■■oo
+oo■oooo
+  ooo  
+  ■oo  
+
+ pegs: 4
+------------------
+
+Etape n°30 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooooo
+oo■oooo
+oo■oooo
   ooo  
   ■oo  
 
  pegs: 3
 ------------------
 
-Etape n°12 : 
+Etape n°31 : 
 
 ------------------ 
   ooo  
   ooo  
-■oooooo
 ooooooo
-ooo■ooo
-  ooo  
+ooooooo
+ooooooo
+  ■oo  
   ■oo  
 
- pegs: 3
+ pegs: 2
+------------------
+
+Etape n°32 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooooo
+ooooooo
+oo■oooo
+  ooo  
+  ooo  
+
+ pegs: 1
 ------------------
 

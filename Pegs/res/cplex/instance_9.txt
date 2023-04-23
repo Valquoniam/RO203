@@ -1,72 +1,324 @@
-solveTime = 9.477999925613403 s.
+solveTime = 60.36399984359741
 
-isOptimal = true
+isOptimal = false
 
 Etape n°1 : 
 
 ------------------ 
-  ooo  
-  ooo  
-ooooooo
-o■■■ooo
-o■ooooo
-  o■o  
-  ooo  
+  ■■o  
+  ■■■  
+o■■■■■o
+o■o■■o■
+■■■■■■o
+  ■o■  
+  ■oo  
 
- pegs: 5
+ pegs: 23
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-  ooo  
-  ooo  
-o■ooooo
-oo■■ooo
-ooooooo
-  o■o  
-  ooo  
+  ■■o  
+  ■■■  
+o■■■■■o
+o■oo■o■
+■■■o■■o
+  ■■■  
+  ■oo  
 
- pegs: 4
+ pegs: 22
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-  ooo  
-  ooo  
-o■ooooo
-oo■■ooo
-ooooooo
-  o■o  
-  ooo  
+  ■■o  
+  ■■■  
+o■■■■■o
+o■oo■o■
+■■■■ooo
+  ■■■  
+  ■oo  
 
- pegs: 4
+ pegs: 21
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-  ooo  
-  ooo  
-o■ooooo
-o■ooooo
-ooooooo
-  o■o  
-  ooo  
+  ■■o  
+  ■■■  
+o■■■■■o
+o■oo■o■
+■■■oooo
+  ■o■  
+  ■■o  
 
- pegs: 3
+ pegs: 20
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
+  ■■o  
+  ■o■  
+o■■o■■o
+o■o■■o■
+■■■oooo
+  ■o■  
+  ■■o  
+
+ pegs: 19
+------------------
+
+Etape n°6 : 
+
+------------------ 
+  oo■  
+  ■o■  
+o■■o■■o
+o■o■■o■
+■■■oooo
+  ■o■  
+  ■■o  
+
+ pegs: 18
+------------------
+
+Etape n°7 : 
+
+------------------ 
+  oo■  
+  ■o■  
+o■■o■■o
+o■o■■o■
+■■■oooo
+  ■o■  
+  oo■  
+
+ pegs: 17
+------------------
+
+Etape n°8 : 
+
+------------------ 
+  oo■  
+  ■o■  
+o■■■ooo
+o■o■■o■
+■■■oooo
+  ■o■  
+  oo■  
+
+ pegs: 16
+------------------
+
+Etape n°9 : 
+
+------------------ 
+  oo■  
+  ■o■  
+o■■■ooo
+o■o■■o■
+■■ooooo
+  oo■  
+  ■o■  
+
+ pegs: 15
+------------------
+
+Etape n°10 : 
+
+------------------ 
+  oo■  
+  oo■  
+o■o■ooo
+o■■■■o■
+■■ooooo
+  oo■  
+  ■o■  
+
+ pegs: 14
+------------------
+
+Etape n°11 : 
+
+------------------ 
+  oo■  
+  oo■  
+o■o■ooo
+o■■■■o■
+oo■oooo
+  oo■  
+  ■o■  
+
+ pegs: 13
+------------------
+
+Etape n°12 : 
+
+------------------ 
+  oo■  
+  oo■  
+o■o■ooo
+o■o■■o■
+ooooooo
+  ■o■  
+  ■o■  
+
+ pegs: 12
+------------------
+
+Etape n°13 : 
+
+------------------ 
+  oo■  
+  oo■  
+o■o■ooo
+o■o■■o■
+oo■oooo
+  oo■  
+  oo■  
+
+ pegs: 11
+------------------
+
+Etape n°14 : 
+
+------------------ 
+  oo■  
+  oo■  
+o■o■ooo
+o■o■■o■
+oo■oooo
+  oo■  
+  oo■  
+
+ pegs: 11
+------------------
+
+Etape n°15 : 
+
+------------------ 
+  oo■  
+  oo■  
+ooo■ooo
+ooo■■o■
+o■■oooo
+  oo■  
+  oo■  
+
+ pegs: 10
+------------------
+
+Etape n°16 : 
+
+------------------ 
+  oo■  
+  oo■  
+ooo■ooo
+ooo■■o■
+■oooooo
+  oo■  
+  oo■  
+
+ pegs: 9
+------------------
+
+Etape n°17 : 
+
+------------------ 
   ooo  
   ooo  
+ooo■■oo
+ooo■■o■
+■oooooo
+  oo■  
+  oo■  
+
+ pegs: 8
+------------------
+
+Etape n°18 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooo■o
+ooo■■o■
+■oooooo
+  oo■  
+  oo■  
+
+ pegs: 7
+------------------
+
+Etape n°19 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooo■o
+ooooo■■
+■oooooo
+  oo■  
+  oo■  
+
+ pegs: 6
+------------------
+
+Etape n°20 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooo■o
+oooo■oo
+■oooooo
+  oo■  
+  oo■  
+
+ pegs: 5
+------------------
+
+Etape n°21 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooooo■o
+oooo■oo
+■ooo■oo
+  ooo  
+  ooo  
+
+ pegs: 4
+------------------
+
+Etape n°22 : 
+
+------------------ 
+  ooo  
+  ooo  
+oooo■■o
 ooooooo
+■oooooo
+  ooo  
+  ooo  
+
+ pegs: 3
+------------------
+
+Etape n°23 : 
+
+------------------ 
+  ooo  
+  ooo  
+ooo■ooo
 ooooooo
-o■ooooo
-  o■o  
+■oooooo
+  ooo  
   ooo  
 
  pegs: 2

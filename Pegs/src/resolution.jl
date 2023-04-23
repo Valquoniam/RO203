@@ -63,11 +63,7 @@ function cplexSolve(grid::Matrix{Int64})
                                                                                                   + M[i,j+1,t,1] - M[i,j+2,t,1] )
 
     # One move at each step
-    @constraint(m, [t in 1:(s-1)], sum(M[i,j,t,d] for i in 1:n, j in 1:n, d in 1:4) <= 1) # Un seul mouvement par étape est autorisé, tous pions confondus # <= 1 si le jeu n'est pas forcément résolvable
-
-
-    # Adding a constraint for security : at each step, the number of holes has to increase by 1
-    # @constraint(m, [t in 2:(s-1)], sum(bState[i,j,t] for i in 1:n for j in 1:n) == sum(bState[i,j,t-1] for i in 1:n for j in 1:n) -1)
+    @constraint(m, [t in 1:(s-1)], sum(M[i,j,t,d] for i in 1:n, j in 1:n, d in 1:4) <= 1) # Max one move authorized
 
     # Initialasizing the board
     # We will consider the out-of-board values at the end of each step
@@ -103,7 +99,7 @@ function cplexSolve(grid::Matrix{Int64})
     #################################################
 
     # Limitation du temps de résolution à 10 secondes
-    set_time_limit_sec(m, 20)
+    set_time_limit_sec(m, 60)
     
     set_silent(m)
     
@@ -267,7 +263,7 @@ function solveDataSet()
                 if isOptimal == -1
                     println(fout, "Pas de solution trouvé dans le temps imparti")
                 else
-                    println(fout, "solveTime = ", resolutionTime, " s.\n") 
+                    println(fout, "solveTime = ", resolutionTime, "\n") 
                     println(fout, "isOptimal = ", isOptimal, "\n")
                     for i in 1:n
                         println(fout, "Etape n°$i : \n")

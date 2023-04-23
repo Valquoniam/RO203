@@ -149,7 +149,6 @@ function saveInstance(haut, bas, gauche, droite, outputFile::String)
 		end
 	end
     close(writer)
-    
 end 
 
 """

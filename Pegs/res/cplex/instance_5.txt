@@ -1,4 +1,4 @@
-solveTime = 0.012000083923339844 s.
+solveTime = 0.05299997329711914
 
 isOptimal = true
 
@@ -6,13 +6,55 @@ Etape n°1 :
 
 ------------------ 
   ooo  
-  ooo  
+  ■oo  
 ooooooo
-o■ooooo
-ooooooo
+ooo■ooo
+ooo■ooo
   ooo  
-  ooo  
+  ■oo  
 
- pegs: 1
+ pegs: 4
+------------------
+
+Etape n°2 : 
+
+------------------ 
+  ooo  
+  ■oo  
+ooooooo
+ooo■ooo
+ooo■ooo
+  ooo  
+  ■oo  
+
+ pegs: 4
+------------------
+
+Etape n°3 : 
+
+------------------ 
+  ooo  
+  ■oo  
+ooooooo
+ooooooo
+ooooooo
+  o■o  
+  ■oo  
+
+ pegs: 3
+------------------
+
+Etape n°4 : 
+
+------------------ 
+  ooo  
+  ■oo  
+ooooooo
+ooooooo
+ooooooo
+  o■o  
+  ■oo  
+
+ pegs: 3
 ------------------
 
