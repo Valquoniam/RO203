@@ -9,6 +9,7 @@ In this repository, you will find our work on solving Pegs and Tower games using
  !["Pegs Board"](/images/Pegs.png)
 
 To include the program in Julia, you have to enter the command `include("resolution.jl")` in the directory _Pegs/src_
+or `include("/Pegs/src/resolution.jl")` if you're in the main directory.
 
 Then, you will have the available commands :
 
