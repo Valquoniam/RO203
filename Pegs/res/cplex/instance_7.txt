@@ -1,186 +1,82 @@
-solveTime = 0.5959999561309814
+solveTime = 0.04500007629394531
 
 isOptimal = true
 
 Etape n°1 : 
 
 ------------------ 
-  ooo  
-  ■■o  
-ooo■ooo
-o■■oooo
-■■■o■■■
-  o■■  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■oo■■o
+  ■■  
+  oo  
 
- pegs: 13
+ pegs: 6
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-  ooo  
-  ■■o  
-ooo■ooo
-o■■o■oo
-■■■oo■■
-  o■o  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■o■ooo
+  ■■  
+  oo  
 
- pegs: 12
+ pegs: 5
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-  ooo  
-  ■■o  
-o■o■ooo
-oo■o■oo
-■o■oo■■
-  o■o  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■ooooo
+  o■  
+  ■o  
 
- pegs: 11
+ pegs: 4
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-o■ooooo
-oo■■■oo
-■o■oo■■
-  o■o  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■ooooo
+  o■  
+  ■o  
 
- pegs: 10
+ pegs: 4
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-o■■oooo
-ooo■■oo
-■oooo■■
-  o■o  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■ooooo
+  o■  
+  ■o  
 
- pegs: 9
+ pegs: 4
 ------------------
 
 Etape n°6 : 
 
 ------------------ 
-  ooo  
-  ooo  
-o■ooooo
-oo■■■oo
-■oooo■■
-  o■o  
-  ooo  
+  oo  
+  oo  
+■ooooo
+■ooooo
+  o■  
+  ■o  
 
- pegs: 8
-------------------
-
-Etape n°7 : 
-
------------------- 
-  ooo  
-  ooo  
-o■ooooo
-o■oo■oo
-■oooo■■
-  o■o  
-  ooo  
-
- pegs: 7
-------------------
-
-Etape n°8 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-oooo■oo
-■■ooo■■
-  o■o  
-  ooo  
-
- pegs: 6
-------------------
-
-Etape n°9 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-oooo■oo
-■■oo■oo
-  o■o  
-  ooo  
-
- pegs: 5
-------------------
-
-Etape n°10 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-ooooooo
-■■ooooo
-  ooo  
-  ooo  
-
- pegs: 2
-------------------
-
-Etape n°11 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-ooooooo
-oo■oooo
-  ooo  
-  ooo  
-
- pegs: 1
-------------------
-
-Etape n°12 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-ooooooo
-oo■oooo
-  ■oo  
-  ooo  
-
- pegs: 2
-------------------
-
-Etape n°13 : 
-
------------------- 
-  ooo  
-  ooo  
-ooooooo
-ooooooo
-ooooooo
-  ooo  
-  ■oo  
-
- pegs: 1
+ pegs: 4
 ------------------
 

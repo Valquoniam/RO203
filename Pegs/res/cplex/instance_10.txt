@@ -1,199 +1,213 @@
-solveTime = 1.7669999599456787
+solveTime = 60.763999938964844
 
-isOptimal = true
+isOptimal = false
 
 Etape n°1 : 
 
 ------------------ 
-  ■oo  
-  o■o  
-■o■■■o■
-oo■■oo■
-■o■o■■■
-  ■■■  
-  ■oo  
+  ooo■  
+  oo■■  
+■ooo■■■o
+o■oooo■o
+■o■o■■■■
+■oo■oooo
+  ooo■  
+  o■■o  
 
- pegs: 19
+ pegs: 20
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-  ■oo  
-  ■■o  
-■oo■■o■
-ooo■oo■
-■o■o■■■
-  ■■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■oooo■■o
+o■oo■o■o
+■o■o■■■■
+■oo■oooo
+  ooo■  
+  o■■o  
 
- pegs: 18
+ pegs: 19
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-  ■oo  
-  ■■o  
-■oooo■■
-ooo■oo■
-■o■o■■■
-  ■■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■oooo■■o
+■■oo■o■o
+oo■o■■■■
+ooo■oooo
+  ooo■  
+  o■■o  
 
- pegs: 17
+ pegs: 18
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-  ■oo  
-  ■■o  
-■ooo■oo
-ooo■oo■
-■o■o■■■
-  ■■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■oooo■■o
+■■oo■o■o
+oo■o■■■■
+ooo■oooo
+  ooo■  
+  ooo■  
 
- pegs: 16
+ pegs: 17
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
-  ■oo  
-  ■■o  
-■ooo■oo
-ooo■oo■
-■o■■oo■
-  ■■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■ooo■ooo
+■■oo■o■o
+oo■o■■■■
+ooo■oooo
+  ooo■  
+  ooo■  
 
- pegs: 15
+ pegs: 16
 ------------------
 
 Etape n°6 : 
 
 ------------------ 
-  ■oo  
-  oo■  
-■ooo■oo
-ooo■oo■
-■o■■oo■
-  ■■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■ooo■ooo
+■■oo■ooo
+oo■o■■o■
+ooo■oo■o
+  ooo■  
+  ooo■  
 
- pegs: 14
+ pegs: 15
 ------------------
 
 Etape n°7 : 
 
 ------------------ 
-  ■oo  
-  oo■  
-■ooo■oo
-oo■■oo■
-■oo■oo■
-  o■■  
-  ■oo  
+  ooo■  
+  ooo■  
+■ooo■ooo
+■■oo■ooo
+oo■o■■o■
+ooo■o■■o
+  oooo  
+  oooo  
 
- pegs: 13
+ pegs: 14
 ------------------
 
 Etape n°8 : 
 
 ------------------ 
-  ■oo  
-  oo■  
-■ooo■oo
-oo■■oo■
-■oo■oo■
-  ■oo  
-  ■oo  
+  ooo■  
+  ooo■  
+■ooo■ooo
+■■oo■ooo
+oo■o■■o■
+ooo■■ooo
+  oooo  
+  oooo  
 
- pegs: 12
+ pegs: 13
 ------------------
 
 Etape n°9 : 
 
 ------------------ 
-  ■oo  
-  oo■  
-■ooo■oo
-oo■■oo■
-■o■■oo■
-  ooo  
-  ooo  
+  ooo■  
+  ooo■  
+■ooo■ooo
+■■oo■ooo
+oo■o■■o■
+oo■ooooo
+  oooo  
+  oooo  
 
- pegs: 11
+ pegs: 12
 ------------------
 
 Etape n°10 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■oooooo
-oo■■■o■
-■o■■oo■
-  ooo  
-  ooo  
+  ooo■  
+  ooo■  
+oooo■ooo
+o■oo■ooo
+■o■o■■o■
+oo■ooooo
+  oooo  
+  oooo  
 
- pegs: 10
+ pegs: 11
 ------------------
 
 Etape n°11 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■oooooo
-oo■■■o■
-■■oooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooo■■oo
+o■oo■ooo
+■o■o■■o■
+oo■ooooo
+  oooo  
+  oooo  
 
- pegs: 9
+ pegs: 10
 ------------------
 
 Etape n°12 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■oooooo
-oo■■■o■
-oo■ooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooo■■oo
+o■oo■ooo
+■o■o■■o■
+oo■ooooo
+  oooo  
+  oooo  
 
- pegs: 8
+ pegs: 10
 ------------------
 
 Etape n°13 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■oooooo
-oo■■■o■
-oo■ooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooo■■oo
+o■■o■ooo
+■ooo■■o■
+oooooooo
+  oooo  
+  oooo  
 
- pegs: 8
+ pegs: 9
 ------------------
 
 Etape n°14 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■oooooo
-oo■■■o■
-oo■ooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooooo■o
+o■■o■ooo
+■ooo■■o■
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 8
 ------------------
@@ -201,13 +215,14 @@ oo■ooo■
 Etape n°15 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■o■oooo
-ooo■■o■
-oooooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooooo■o
+ooo■■ooo
+■ooo■■o■
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 7
 ------------------
@@ -215,13 +230,14 @@ oooooo■
 Etape n°16 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■o■oooo
-oo■ooo■
-oooooo■
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooooo■o
+ooooo■oo
+■ooo■■o■
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 6
 ------------------
@@ -229,13 +245,14 @@ oooooo■
 Etape n°17 : 
 
 ------------------ 
-  ■oo  
-  ooo  
-■o■ooo■
-oo■oooo
-ooooooo
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooooo■o
+ooooo■oo
+■ooooo■■
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 5
 ------------------
@@ -243,13 +260,14 @@ ooooooo
 Etape n°18 : 
 
 ------------------ 
-  ■oo  
-  ■oo  
-■ooooo■
-ooooooo
-ooooooo
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+oooooo■o
+ooooo■oo
+■oooo■oo
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 4
 ------------------
@@ -257,14 +275,30 @@ ooooooo
 Etape n°19 : 
 
 ------------------ 
-  ooo  
-  ooo  
-■o■ooo■
-ooooooo
-ooooooo
-  ooo  
-  ooo  
+  oooo  
+  oooo  
+ooooo■■o
+oooooooo
+■ooooooo
+oooooooo
+  oooo  
+  oooo  
 
  pegs: 3
+------------------
+
+Etape n°20 : 
+
+------------------ 
+  oooo  
+  oooo  
+oooo■ooo
+oooooooo
+■ooooooo
+oooooooo
+  oooo  
+  oooo  
+
+ pegs: 2
 ------------------
 

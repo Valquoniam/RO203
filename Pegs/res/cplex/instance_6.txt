@@ -1,72 +1,16 @@
-solveTime = 0.06799983978271484
+solveTime = 0.006999969482421875
 
 isOptimal = true
 
 Etape n°1 : 
 
 ------------------ 
-   oo■o   
-   oooo   
-   oooo   
-ooooooooo■
-oooooo■ooo
-oooooooooo
-oooooooooo
-   ooo■   
-   oooo   
-   oooo   
+  ■  
+  o  
+ooooo
+  o  
+  o  
 
- pegs: 4
-------------------
-
-Etape n°2 : 
-
------------------- 
-   oo■o   
-   oooo   
-   oooo   
-ooooooooo■
-oooooo■ooo
-oooooooooo
-oooooooooo
-   ooo■   
-   oooo   
-   oooo   
-
- pegs: 4
-------------------
-
-Etape n°3 : 
-
------------------- 
-   oo■o   
-   oooo   
-   oooo   
-ooooooooo■
-oooooo■ooo
-oooooooooo
-oooooooooo
-   ooo■   
-   oooo   
-   oooo   
-
- pegs: 4
-------------------
-
-Etape n°4 : 
-
------------------- 
-   oo■o   
-   oooo   
-   oooo   
-ooooooooo■
-oooooo■ooo
-oooooooooo
-oooooooooo
-   ooo■   
-   oooo   
-   oooo   
-
- pegs: 4
+ pegs: 1
 ------------------
 

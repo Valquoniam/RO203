@@ -15,16 +15,23 @@ function cplexSolve(grid::Matrix{Int64})
     # Get the size of the grid and add 4 because we need to include everything and we use n-2
     grid_size = size(grid,1)
     n = grid_size + 4
-
-    # Get our parameters
-    nb_cases = grid_size^2 - 4*(floor(grid_size/3))^2
-    nb_cases_out = grid_size^2 - nb_cases
-    s = Int64(sum(grid) - 2*nb_cases_out)
+    nb_pions = 0
+    
+    # Get the number of initial pawns
+    for i in 1:grid_size
+        for j in 1:grid_size
+            if grid[i,j] == 1
+                nb_pions += 1
+            end
+        end
+    end
+    # Maximal number of steps = number of initial pawns
+    s = Int64(nb_pions)
     
     # Create the model
     m = Model(CPLEX.Optimizer)
 
-    # Big thanks to https://www.cs.york.ac.uk/aig/projects/implied/docs/CPAIOR03.pdf for the constraints and the variable
+    # Big thanks to https://www.cs.york.ac.uk/aig/projects/implied/docs/CPAIOR03.pdf for the constraints and the variables
    
     #################################################
     # Variables

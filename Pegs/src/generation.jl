@@ -12,15 +12,26 @@ Argument
 ################## GENERATING AN INSTANCE #####################################
 
 function generateInstance(n::Int64, density::Float64)
-        
-    # The size of the grid has to be 7 +k*3
-    @assert mod(n-7,3) == 0 "Incorrect size"
-
+    
     # Grid creation
     grid = Matrix{Int64}(undef, n, n)
 
-    # Considering corners to remove (here, it means writing a 2 in the correspondant cases)
-    size_of_corners = 2 + (n-7) ÷ 3
+    # Setting multiple type of boards
+    type_of_boards = ["crux", "square", "random"]
+    
+    # Selecting one of them randomly
+    board_type = type_of_boards[rand(1:length(type_of_boards))]
+    println(board_type)
+    size_of_corners = 0
+    # 1st case : crux
+    if board_type == "crux"
+        
+        # Considering corners to remove (here, it means writing a 2 in the correspondant cases)
+        size_of_corners = 2 + (n-7) ÷ 3
+    end
+
+    # 2nd case : square : do nothing
+
     for i in 1:n
         for j in 1:n
             # Corners
@@ -31,6 +42,15 @@ function generateInstance(n::Int64, density::Float64)
                     grid[i,j] = 1
                 else
                     grid[i,j] = 0
+                end
+            end
+
+            # 3rd case : random board
+            # We start as a square board, but we randomly add "off-the-grid" points. Here : 1 chance out of 3 to be off-the-grid
+            if board_type == "random"
+                is_a_2 = rand(1:3)
+                if is_a_2 == 1
+                    grid[i,j] = 2
                 end
             end
         end
@@ -49,14 +69,8 @@ Generate all the instances
 function generateDataSet(set_size::Int64)
     for i in 2:set_size
 
-        # Size of the grid between 7 and 10 for computation time obvious reasons
-        a = rand()
-        if rand() <= 0.5
-            n = 7
-        else
-            n=10
-        end
-        #n = Int64(7 + 2* ceil(3*rand()))
+        # Size of the grid between 5 and 10 for computation time obvious reasons
+        n = rand(5:10)
         
         # Random density
         density = rand()

@@ -8,18 +8,21 @@ In this repository, you will find our work on solving Pegs and Tower games using
 
  !["Pegs Board"](/images/Pegs.png)
 
-Available commands :
+To include the program in Julia, you have to enter the command `include("resolution.jl")` in the directory _Pegs/src_
 
-- `generateDataSet(n)` create n instances of the game, with multiple sizes and density.
+Then, you will have the available commands :
+
+- `generateDataSet(n)` create n instances of the game, with multiple sizes, densities and forms.
 
 - `displayAllGrids()` displays all the instances in a more readable way than the .txt form.
+
+- `dislayGrid("../data/instance_i.txt")` displays only the selected grid.
 
 - `solveDataSet()`solves all the instances and displays the steps.
 
 - `performanceDiagram("../perfs_peg.png")` show a graph of the computation time for the optimal solves.
 
 - `resultArray("../perfs_peg.tex)` creates a .tex displaying the computation time and which solves are optimal.
-
 
 ## Game n°2 : Towers
 

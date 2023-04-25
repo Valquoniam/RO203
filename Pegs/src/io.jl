@@ -59,8 +59,14 @@ function displayGrid(x::Matrix{Int64})
     end
     grid = string(grid,"\n")
 
-    nb_cases = (n_lines)^2 - 4*((floor(n_lines/3)))^2
-    nb_cases_out = Int64((n_lines)^2 - nb_cases)
+    nb_cases_out = 0
+    for i in 1:size(x, 1)
+        for j in 1:size(x, 2)
+            if x[i,j] == 2
+                nb_cases_out += 1
+            end
+        end
+    end
     
     grid = string(grid, " pegs: ", sum(x) - 2*(nb_cases_out), "\n------------------\n")
     return grid

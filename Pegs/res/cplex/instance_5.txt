@@ -1,60 +1,106 @@
-solveTime = 0.05299997329711914
+solveTime = 0.07400012016296387
 
 isOptimal = true
 
 Etape n°1 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-ooooooo
-ooo■ooo
-ooo■ooo
-  ooo  
-  ■oo  
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■oooo■■ooo
 
- pegs: 4
+ pegs: 6
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-ooooooo
-ooo■ooo
-ooo■ooo
-  ooo  
-  ■oo  
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■oooo■■ooo
 
- pegs: 4
+ pegs: 6
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-ooooooo
-ooooooo
-ooooooo
-  o■o  
-  ■oo  
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■ooo■ooooo
 
- pegs: 3
+ pegs: 5
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-  ooo  
-  ■oo  
-ooooooo
-ooooooo
-ooooooo
-  o■o  
-  ■oo  
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■ooo■ooooo
 
- pegs: 3
+ pegs: 5
+------------------
+
+Etape n°5 : 
+
+------------------ 
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■ooo■ooooo
+
+ pegs: 5
+------------------
+
+Etape n°6 : 
+
+------------------ 
+oooooooooo
+oooooooooo
+oooooooooo
+ooooo■oooo
+oooooooooo
+oooooooooo
+oooooooooo
+ooo■o■oooo
+oooooooooo
+■ooo■ooooo
+
+ pegs: 5
 ------------------
 
