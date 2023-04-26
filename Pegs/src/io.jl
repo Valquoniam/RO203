@@ -153,7 +153,7 @@ function performanceDiagram(outputFile::String)
     for file in readdir(resultFolder)
             
         path = resultFolder * file
-        
+        println(path)
         if isdir(path)
 
             folderCount += 1
@@ -165,7 +165,8 @@ function performanceDiagram(outputFile::String)
                 fileCount += 1
 
                 # Lecture du fichier
-                data = readlines(string("../res/cplex/",resultFile))
+                resultFile = string("/", resultFile)
+                data = readlines(string(path,resultFile))
 
                 # Obtention des informations
                 solveTime = parse(Float64, split(data[1], "= ")[2])
@@ -392,7 +393,6 @@ function resultsArray(outputFile::String)
                 # Obtention des informations
                 solveTime = parse(Float64, split(data[1], "= ")[2])
                 isOptimal = parse(Bool, split(data[3], "= ")[2]) 
-                println(isOptimal)
                 println(fout, " & ", round(solveTime, digits=2), " & ")
 
                 if isOptimal

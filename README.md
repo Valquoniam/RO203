@@ -2,7 +2,7 @@
 
 RO203 Project in collab w/ Axel Dumont - Solving Linear Programs : "Pegs" & "Towers
 
-In this repository, you will find our work on solving Pegs and Tower games using cplex.
+In this repository, you will find our work on solving Pegs and Tower games using cplex and heuristics functions
 
 ## Game n°1 : Peg Solitaire
 
@@ -17,7 +17,7 @@ Then, you will have the available commands :
 
 - `displayAllGrids()` displays all the instances in a more readable way than the .txt form.
 
-- `dislayGrid("../data/instance_i.txt")` displays only the selected grid.
+- `println(dislayGrid("../data/instance_i.txt"))` displays only the selected grid.
 
 - `solveDataSet()`solves all the instances and displays the steps.
 

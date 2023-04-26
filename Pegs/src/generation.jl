@@ -70,7 +70,7 @@ function generateDataSet(set_size::Int64)
     for i in 2:set_size
 
         # Size of the grid between 5 and 10 for computation time obvious reasons
-        n = rand(5:10)
+        n = rand(5:9)
         
         # Random density
         density = rand()
