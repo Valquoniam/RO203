@@ -1,361 +1,571 @@
-solveTime = 60.41900014877319
+solveTime = 60.521000146865845
 
 isOptimal = false
 
 Etape n°1 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-oo■ooo■o■o
-o■oooo■o■■
-■■ooooo■o■
-oo■ooooooo
-oo■oooooo■
-o■oooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|o|■|o|o|o|o|■|o|■|■|
+ - - - - - - - - - -
+|■|■|o|o|o|o|o|■|o|■|
+ - - - - - - - - - -
+|o|o|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 21
+    Pegs: 21
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-oo■ooo■o■o
-o■oooo■o■■
-■■ooooo■o■
-oo■ooooooo
-oo■oooooo■
-o■oooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|o|■|o|o|o|o|■|o|■|■|
+ - - - - - - - - - -
+|■|■|o|o|o|o|o|■|o|■|
+ - - - - - - - - - -
+|o|o|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 21
+    Pegs: 21
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-oo■ooo■o■o
-o■oooo■o■■
-■■ooooo■o■
-oooooooooo
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|o|■|o|o|o|o|■|o|■|■|
+ - - - - - - - - - -
+|■|■|o|o|o|o|o|■|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 20
+    Pegs: 20
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-oo■ooo■o■o
-o■oooo■o■o
-■■ooooo■oo
-ooooooooo■
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|■|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|o|■|o|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|■|■|o|o|o|o|o|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 19
+    Pegs: 19
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-o■■ooo■o■o
-oooooo■o■o
-■oooooo■oo
-ooooooooo■
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|■|■|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 18
+    Pegs: 18
 ------------------
 
 Etape n°6 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-o■■ooooo■o
-oooooooo■o
-■ooooo■■oo
-ooooooooo■
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|■|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 17
+    Pegs: 17
 ------------------
 
 Etape n°7 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-o■■ooooo■o
-oooooooo■o
-■ooooooo■o
-ooooooooo■
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 16
+    Pegs: 16
 ------------------
 
 Etape n°8 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■ooooooo■o
-ooooooooo■
-ooooooooo■
-o■■ooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|■|■|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 15
+    Pegs: 15
 ------------------
 
 Etape n°9 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■ooooooo■o
-ooooooooo■
-ooooooooo■
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 14
+    Pegs: 14
 ------------------
 
 Etape n°10 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■ooooooo■o
-ooooooooo■
-ooooooooo■
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|■|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 14
+    Pegs: 14
 ------------------
 
 Etape n°11 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■ooooooo■■
-oooooooooo
-oooooooooo
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 13
+    Pegs: 13
 ------------------
 
 Etape n°12 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■ooooooo■■
-oooooooooo
-oooooooooo
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|■|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 13
+    Pegs: 13
 ------------------
 
 Etape n°13 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■oooooo■oo
-oooooooooo
-oooooooooo
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 12
+    Pegs: 12
 ------------------
 
 Etape n°14 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■oooooo■oo
-oooooooooo
-oooooooooo
-■ooooooooo
-ooooo■oooo
-oooo■■oooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|■|o|o|o|o|
 
- pegs: 12
+    Pegs: 12
 ------------------
 
 Etape n°15 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooo■o
-oooooooo■o
-■oooooo■oo
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|■|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 11
+    Pegs: 11
 ------------------
 
 Etape n°16 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■oooooo■■o
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 10
+    Pegs: 10
 ------------------
 
 Etape n°17 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■oooooo■■o
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|■|■|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 10
+    Pegs: 10
 ------------------
 
 Etape n°18 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■ooooo■ooo
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 9
+    Pegs: 9
 ------------------
 
 Etape n°19 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■ooooo■ooo
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 9
+    Pegs: 9
 ------------------
 
 Etape n°20 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■ooooo■ooo
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 9
+    Pegs: 9
 ------------------
 
 Etape n°21 : 
 
 ------------------ 
-oo■o■ooooo
-oooooo■ooo
-■ooooooooo
-oooooooooo
-■ooooo■ooo
-oooooooooo
-oooooooooo
-■oooo■oooo
-oooooooooo
-oooo■ooooo
+ - - - - - - - - - -
+|o|o|■|o|■|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|o|■|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|■|o|o|o|o|o|
 
- pegs: 9
+    Pegs: 9
 ------------------
 

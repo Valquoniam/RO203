@@ -1,106 +1,166 @@
-solveTime = 0.07400012016296387
+solveTime = 0.14300012588500977
 
 isOptimal = true
 
 Etape n°1 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■oooo■■ooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|■|o|o|o|
 
- pegs: 6
+    Pegs: 6
 ------------------
 
 Etape n°2 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■oooo■■ooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|o|■|■|o|o|o|
 
- pegs: 6
+    Pegs: 6
 ------------------
 
 Etape n°3 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■ooo■ooooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|■|o|o|o|o|o|
 
- pegs: 5
+    Pegs: 5
 ------------------
 
 Etape n°4 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■ooo■ooooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|■|o|o|o|o|o|
 
- pegs: 5
+    Pegs: 5
 ------------------
 
 Etape n°5 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■ooo■ooooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|■|o|o|o|o|o|
 
- pegs: 5
+    Pegs: 5
 ------------------
 
 Etape n°6 : 
 
 ------------------ 
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo■oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo■o■oooo
-oooooooooo
-■ooo■ooooo
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|■|o|■|o|o|o|o|
+ - - - - - - - - - -
+|o|o|o|o|o|o|o|o|o|o|
+ - - - - - - - - - -
+|■|o|o|o|■|o|o|o|o|o|
 
- pegs: 5
+    Pegs: 5
 ------------------
 

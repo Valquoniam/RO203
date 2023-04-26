@@ -62,6 +62,9 @@ function displayGrid(x::Matrix{Int64})
             end
         end 
         grid = string(grid,"\n")
+        if i == n_lines
+            grid = string(grid,repeat(" -",n_lines))
+        end
     end
     grid = string(grid,"\n")
 
