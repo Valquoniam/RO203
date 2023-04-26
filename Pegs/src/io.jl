@@ -46,13 +46,19 @@ function displayGrid(x::Matrix{Int64})
     n_lines = size(x, 1)
 
     for i in 1:n_lines
+        grid = string(grid,repeat(" -",n_lines))
+        grid = string(grid,"\n")
         for j in 1:n_lines
+            grid = string(grid,"|")
             if x[i, j] == 0
                 grid = string(grid,"o")
             elseif x[i, j] == 1
                 grid = string(grid,"■")
             elseif x[i, j] == 2
                 grid = string(grid," ")
+            end
+            if j == n_lines
+                grid = string(grid, "|")
             end
         end 
         grid = string(grid,"\n")
@@ -68,7 +74,7 @@ function displayGrid(x::Matrix{Int64})
         end
     end
     
-    grid = string(grid, " pegs: ", sum(x) - 2*(nb_cases_out), "\n------------------\n")
+    grid = string(grid, "    Pegs: ", sum(x) - 2*(nb_cases_out), "\n------------------\n")
     return grid
 end
 
@@ -79,7 +85,7 @@ end
 function displayAllGrids()
     for name in readdir("../data")
         grid = readInputFile("../data/$name")
-        displayGrid(grid)
+        println(displayGrid(grid))
     end
 end
 
